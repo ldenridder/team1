@@ -40,6 +40,9 @@ public class FlagFactory {
         case RUSSIA:
             result = Arrays.asList(Color.WHITE, Color.BLUE, Color.RED);
             break;
+        case LUXEMBOURGH:
+            result = Arrays.asList(Color.RED, Color.WHITE, Color.LIGHT_BLUE);
+            break;
         case UNCLASSIFIED:
         default:
             result = Arrays.asList(Color.GRAY);
@@ -50,3 +53,19 @@ public class FlagFactory {
     // end::getFlag[]
 
 }
+
+
+// private static final Map<Nationality, Flag> FLAGS =
+// new HashMap<Nationality, Flag>();
+// static {
+// FLAGS.put(DUTCH, new DutchFlag());
+// FLAGS.put(GERMAN, new GermanFlag());
+// FLAGS.put(BELGIAN, new BelgianFlag());
+// FLAGS.put(FRENCH, new FrenchFlag());
+// FLAGS.put(ITALIAN, new ItalianFlag());
+// }
+// public List<Color> getFlagColors(Nationality nationality) {
+// Flag flag = FLAGS.get(nationality);
+// flag = flag != null ? flag : new DefaultFlag();
+// return flag.getColors();
+// }
